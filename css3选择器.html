@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        table.reference,table.tecspec {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 4px;
+            margin-top: 4px
+        }
+
+        table.reference .fa {
+            font-size: 24px;
+        }
+
+        table.reference tr:nth-child(odd) {
+            background-color: #f6f4f0
+        }
+
+        table.reference tr:nth-child(even) {
+            background-color: #fff
+        }
+
+        table.reference tr.fixzebra {
+            background-color: #f6f4f0
+        }
+
+        table.reference th {
+            color: #fff;
+            background-color: #555;
+            border: 1px solid #555;
+            font-size: 12px;
+            padding: 3px;
+            vertical-align: top;
+            text-align: left
+        }
+
+        table.reference th a:link,table.reference th a:visited {
+            color: #fff
+        }
+
+        table.reference th a:active,table.reference th a:hover {
+            color: #ee872a
+        }
+
+        tr td:first-child {
+            min-width: 25px
+        }
+
+        table.reference td {
+            line-height: 2em;
+            min-width: 24px;
+            border: 1px solid #d4d4d4;
+            padding: 5px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            vertical-align: top
+        }
+        .red{ color: red; }
+    </style>
+</head>
+<body>
+    <table class="reference">
+        <caption style="margin-bottom: 10px; font-size: 20px">
+            CSS3选择器在移动端支持非常好，在PC端的现代浏览器支持良好
+        </caption>
+      <tbody><tr>
+        <th width="22%" align="left">选择器</th>
+        <th width="17%" align="left">示例</th>
+        <th width="56%" align="left">示例说明</th>
+        <th align="left">CSS</th>
+      </tr>
+      <tr class="red">
+          <td><a class="red" href="http://www.runoob.com/cssref/sel-element-gt.html"><i>element</i>&gt;<i>element</i></a></td>
+          <td class="notranslate">div&gt;p</td>
+          <td>选择所有父级是 &lt;div&gt; 元素的 &lt;p&gt; 元素</td>
+          <td>2</td>
+        </tr>
+        <tr class="red">
+            <td><a class="red" href="http://www.runoob.com/cssref/sel-element-pluss.html"><i>element</i>+<i>element</i></a></td>
+            <td class="notranslate">div+p</td>
+            <td>选择所有紧接着&lt;div&gt;元素之后的&lt;p&gt;元素。（单个元素）</td>
+            <td>2</td>
+          </tr>
+          <tr class="red">
+              <td><a class="red" href="http://www.runoob.com/cssref/sel-attribute.html">[<i>attribute</i>]</a></td>
+              <td class="notranslate">[target]</td>
+              <td>选择所有带有target属性元素</td>
+              <td>2</td>
+            </tr>
+            <tr class="red">
+                <td><a class="red" href="http://www.runoob.com/cssref/sel-firstchild.html">:first-child</a></td>
+                <td class="notranslate">p:first-child</td>
+                <td>指定只有当&lt;p&gt;元素是其父级的第一个子级的样式。</td>
+                <td>2</td>
+              </tr>
+              <tr class="red">
+                  <td><a class="red" href="http://www.runoob.com/cssref/sel-before.html">:before</a></td>
+                  <td class="notranslate">p:before</td>
+                  <td>在每个&lt;p&gt;元素之前插入内容</td>
+                  <td>2</td>
+                </tr>
+            <tr class="red">
+                <td><a class="red" href="http://www.runoob.com/cssref/sel-after.html">:after</a></td>
+                <td class="notranslate">p:after</td>
+                <td>在每个&lt;p&gt;元素之后插入内容</td>
+                <td>2</td>
+              </tr>
+    <tr class="red">
+        <td><a class="red" target="_blank" href="http://www.runoob.com/cssref/sel-gen-sibling.html"><i>element1</i>~<i>element2</i></a></td>
+        <td>p~ul</td>
+        <td>选择p元素之后的每一个ul元素（多个元素，且不必紧挨在一起）</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-attr-begin.html">[<i>attribute</i>^=<i>value</i>]</a></td>
+        <td>a[src^="https"]</td>
+        <td>选择每一个src属性的值以"https"开头的元素</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-attr-end.html">[<i>attribute</i>$=<i>value</i>]</a></td>
+        <td>a[src$=".pdf"]</td>
+        <td>选择每一个src属性的值以".pdf"结尾的元素 </td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-attr-contain.html">[<i>attribute</i>*=<i>value</i>]</a></td>
+        <td>a[src*="runoob"]</td>
+        <td>选择每一个src属性的值包含子字符串"runoob"的元素</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-first-of-type.html">:first-of-type</a></td>
+        <td>p:first-of-type</td>
+        <td>选择每个p元素是其父级的第一个p元素</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-last-of-type.html">:last-of-type</a></td>
+        <td>p:last-of-type</td>
+        <td>选择每个p元素是其父级的最后一个p元素</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-only-of-type.html">:only-of-type</a></td>
+        <td>p:only-of-type</td>
+        <td>选择每个p元素是其父级的唯一p元素</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-only-child.html">:only-child</a></td>
+        <td>p:only-child</td>
+        <td>选择每个p元素是其父级的唯一子元素</td>
+        <td>3</td>
+      </tr>
+        <tr class="red">
+        <td><a class="red" target="_blank" href="http://www.runoob.com/cssref/sel-nth-child.html">:nth-child(<i>n</i>)</a></td>
+        <td>p:nth-child(2)</td>
+        <td>选择每个p元素是其父级的第二个子元素</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-nth-last-child.html">:nth-last-child(<i>n</i>)</a></td>
+        <td>p:nth-last-child(2)</td>
+        <td>选择每个p元素的是其父级的第二个子元素，从最后一个子项计数</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-nth-of-type.html">:nth-of-type(<i>n</i>)</a></td>
+        <td>p:nth-of-type(2)</td>
+        <td>选择每个p元素是其父级的第二个p元素</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-nth-last-of-type.html">:nth-last-of-type(<i>n</i>)</a></td>
+        <td>p:nth-last-of-type(2)</td>
+        <td>选择每个p元素的是其父级的第二个p元素，从最后一个子项计数</td>
+        <td>3</td>
+      </tr>
+        <tr class="red">
+        <td><a class="red" target="_blank" href="http://www.runoob.com/cssref/sel-last-child.html">:last-child</a></td>
+        <td>p:last-child</td>
+        <td>选择每个p元素是其父级的最后一个子级。</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-root.html">:root</a></td>
+        <td>:root</td>
+        <td>选择文档的根元素</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-empty.html">:empty</a></td>
+        <td>p:empty</td>
+        <td>选择每个没有任何子级的p元素（包括文本节点）</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-target.html">:target</a></td>
+        <td>#news:target </td>
+        <td>选择当前活动的#news元素（包含该锚名称的点击的URL）</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-enabled.html">:enabled</a></td>
+        <td>input:enabled</td>
+        <td>选择每一个已启用的输入元素</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-disabled.html">:disabled</a></td>
+        <td>input:disabled</td>
+        <td>选择每一个禁用的输入元素</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-checked.html">:checked</a></td>
+        <td>input:checked</td>
+        <td>选择每个选中的输入元素</td>
+        <td>3</td>
+      </tr>
+        <tr class="red">
+        <td><a class="red" target="_blank" href="http://www.runoob.com/cssref/sel-not.html">:not(<i>selector</i>)</a></td>
+        <td>:not(p)</td>
+        <td>选择每个并非p元素的元素</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-selection.html">::selection</a></td>
+        <td>::selection</td>
+        <td>匹配元素中被用户选中或处于高亮状态的部分</td>
+        <td>3</td>
+      </tr>
+      
+       
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-out-of-range.html">:out-of-range</a></td>
+        <td>:out-of-range</td>
+        <td>匹配值在指定区间之外的input元素</td>
+        <td>3</td>
+      </tr>
+       
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-in-range.html">:in-range</a></td>
+        <td>:in-range</td>
+        <td>匹配值在指定区间之内的input元素</td>
+        <td>3</td>
+      </tr>
+      
+      <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-read-write.html">:read-write</a></td>
+        <td>:read-write</td>
+        <td>用于匹配可读及可写的元素</td>
+        <td>3</td>
+      </tr>
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-read-only.html">:read-only</a></td>
+        <td>:read-only</td>
+        <td>用于匹配设置 "readonly"（只读） 属性的元素</td>
+        <td>3</td>
+      </tr>
+      
+        <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-optional.html">:optional</a></td>
+        <td>:optional</td>
+        <td>用于匹配可选的输入元素</td>
+        <td>3</td>
+      </tr>
+      
+          <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-required.html">:required </a></td>
+        <td>:required</td>
+        <td>用于匹配设置了 "required" 属性的元素</td>
+        <td>3</td>
+      </tr>
+       
+          <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-valid.html">:valid </a></td>
+        <td>:valid</td>
+        <td>用于匹配输入值为合法的元素</td>
+        <td>3</td>
+      </tr>
+       <tr>
+        <td><a target="_blank" href="http://www.runoob.com/cssref/sel-invalid.html">:invalid </a></td>
+        <td>:invalid</td>
+        <td>用于匹配输入值为非法的元素</td>
+        <td>3</td>
+      </tr>
+    </tbody>
+</table>
+</body>
+</html>
